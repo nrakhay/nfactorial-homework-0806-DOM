@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --back-color:#f5f0e1;
+    --main-color:#d9d3c1;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: var(--back-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.player{ 
+    background: var(--main-color);
+    width: 350px;
+    height: 80%;
+    border-radius: 5%;
+    box-shadow: 0 40px 100px rgba(30, 61, 59, 0.7);
+    padding: 35px;
+}
+.artist,
+.songTitle{
+    text-align: center;
+    color: #1e3d59;
+}
+
+.songTitle{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+.artist{
+    font-size: 20px;
+}
+
+.albumCover{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+.coverImg{
+    border-radius: 150px;
+    width: 75%;
+    border: 2px solid var(--back-color);
+}
+
+.playPauseButton{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.playPauseIcon{
+    width: 50px;
+    height: 50px;
+    color: #1e3d59;
+}
+ 
+.playPauseIcon:hover{
+    cursor: pointer;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+
+  @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+  @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+  @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+
+
+
+
+

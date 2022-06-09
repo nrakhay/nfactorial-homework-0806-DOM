@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Music Player</title>
+  </head>
+
+  <body>
+    <div class="player">
+      <h1 class="songTitle">I'm not the only one</h1>
+      <p class="artist">Sam Smith</p>
+      <div class="albumCover">
+        <img
+          id="coverImg"
+          class="coverImg"
+          src="/resources/albumcover.jpg"
+          alt=""
+        />
+      </div>
+      <audio id="audioRec" src="/resources/song.mp3"></audio>
+      <div class="playPauseButton">
+        <svg
+          id="playPauseButton"
+          class="playPauseIcon"
+          onclick="buttonClicked()"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          class="bi bi-play-circle-fill"
+          viewBox="0 0 16 16"
+        >
+          <path
+            d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"
+          />
+        </svg>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
